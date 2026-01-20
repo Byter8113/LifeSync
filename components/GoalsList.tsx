@@ -261,7 +261,7 @@ const GoalCard: React.FC<{ goal: Goal, onUpdate: any, onToggleSubtask: any, onDe
     const [extensionDays, setExtensionDays] = useState(1);
     
     const isCompleted = goal.status === 'completed';
-    const isFrozen = goal.status === 'active' && getNow().toISOString().split('T')[0] >= goal.endDate;
+    const isFrozen = goal.status === 'active' && getNow().toISOString().split('T')[0] > goal.endDate;
     
     const totalProgress = useMemo(() => {
         switch(goal.type) {
