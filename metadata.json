@@ -1,0 +1,8 @@
+{
+  "name": "LifeSync: Mastery Hub",
+  "description": "An all-in-one productivity and wellness platform featuring multi-level goal tracking, rich multimedia journaling, and deep mood analytics with Gemini-powered insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
